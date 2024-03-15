@@ -70,9 +70,33 @@
 </head>
 
 <body onload="hidePreloader()">
-    <div class="preloader"><img
-        src="./Topbox Marketing_files/6022a8bec5315e8b1354c35a_bars.svg" width="38" alt="" class="preloader-icon"></div>
-    <div class="full-page">
+    <div class="loader-background">
+            <div class="mosaic-loader">
+                <div class="cell d-0"></div>
+                <div class="cell d-1"></div>
+                <div class="cell d-2"></div>
+                <div class="cell d-3"></div>
+            
+                <div class="cell d-1"></div>
+                <div class="cell d-2"></div>
+                <div class="cell d-3"></div>
+                <div class="cell d-4"></div>
+            
+                <div class="cell d-2"></div>
+                <div class="cell d-3"></div>
+                <div class="cell d-4"></div>
+                <div class="cell d-5"></div>
+            
+                <div class="cell d-3"></div>
+                <div class="cell d-4"></div>
+                <div class="cell d-5"></div>
+                <div class="cell d-6"></div>
+            </div>
+        </div>
+    <!-- <div class="preloader"><img
+        src="./Topbox Marketing_files/6022a8bec5315e8b1354c35a_bars.svg" width="38" alt="" class="preloader-icon"></div> -->
+        
+        <div class="full-page">
         <div id="Top" class="sub-banner heading-image-services">
             <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease"
                 data-easing2="ease" role="banner" class="navbar w-nav"
@@ -265,9 +289,10 @@
             var delay = 1000; // 3 seconds
 
             setTimeout(function() {
-                var preloaders = document.getElementsByClassName('preloader');
+                var preloaders = document.getElementsByClassName('loader-background');
                 for(var i = 0; i < preloaders.length; i++) {
-                    preloaders[i].style.display = 'none';
+                    preloaders[i].style.opacity = '0';
+                    preloaders[i].style.pointerEvents = 'none'; // Add this line
                 }
             }, delay);
         }
