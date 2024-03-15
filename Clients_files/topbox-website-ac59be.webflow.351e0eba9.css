@@ -6,6 +6,7 @@ html {
 
 body {
   margin: 0;
+  
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
@@ -5812,4 +5813,9 @@ figure {
   font-weight: 400;
   font-style: normal;
   font-display: auto;
+}
+
+
+html {
+  background-color: #000;
 }
