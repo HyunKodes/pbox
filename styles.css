@@ -5815,8 +5815,31 @@ figure {
   font-display: auto;
 }
 
+
 body {
   background-color: #000;
 }
 
-navbar {}
+.section.gray{
+  background-color: #000;
+}
+
+.team-wrapper{
+  background-color: #000;
+}
+
+.navbar{
+  background-color: #000;
+}
+
+.service-bottom{
+  background-color: #000;
+}
+
+.footer-style-1{
+  background-color: #000;
+}
+
+h2 {
+  color: white;
+}
