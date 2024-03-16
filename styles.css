@@ -279,6 +279,7 @@ button, input, optgroup, select, textarea {
   color: inherit;
   font: inherit;
   margin: 0;
+  
 }
 
 button {
@@ -5988,54 +5989,68 @@ figure {
   font-style: normal;
   font-display: auto;
 }
-
-
 body {
+  transition: all 2s;
+}
+
+body.dark-mode {
   background-color: #000;
 }
 
-.section.gray{
+body.dark-mode .section.gray{
   background-color: #000;
 }
 
-.team-wrapper{
+body.dark-mode .team-wrapper{
   background-color: #000;
 }
 
-.navbar{
+body.dark-mode .navbar{
   background-color: #000;
 }
 
-.service-bottom{
+body.dark-mode .service-bottom{
   background-color: #000;
 }
 
-.footer-style-1{
+body.dark-mode .footer-style-1{
   background-color: #000;
 }
 
-h2 {
+.dark-mode h2 {
   color: white;
   opacity: 80%;
 }
 
-strong {
+.dark-mode strong {
   color: white;
 }
 
-h3.heading-2 {
+.dark-mode h3.heading-2 {
   color: white;
 }
 
-h5.features-title{
+.dark-mode h5.features-title{
   color: white;
 }
 
-.left-part-wrapper{
+body.dark-mode .left-part-wrapper{
   background-color: #000;
 }
 
-.button {
+.button{
+  transition: background-color 2s;
+}
+
+
+
+body.dark-mode .button {
   color: #000;
   background-color: #fff;
 }
+
+body.dark-mode .button:hover {
+  background-color: #00000025;
+}
+
+
