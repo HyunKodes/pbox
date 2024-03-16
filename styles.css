@@ -6009,6 +6009,10 @@ body.dark-mode .navbar{
   background-color: #000;
 }
 
+body.dark-mode .navbar.transparent {
+  background-color: #000;
+}
+
 body.dark-mode .service-bottom{
   background-color: #000;
 }
@@ -6038,19 +6042,25 @@ body.dark-mode .left-part-wrapper{
   background-color: #000;
 }
 
-.button{
+/* .button{
   transition: background-color 2s;
+} */
+
+body.dark-mode .sign-font{
+  color: #7e7e7ea4;
 }
-
-
 
 body.dark-mode .button {
   color: #000;
-  background-color: #fff;
+  background-color: #e2e1e1;
+  transition: background-color .5s;
+
 }
 
 body.dark-mode .button:hover {
-  background-color: #00000025;
+  background-color: #b9b9b9ab;
+  transform: none;
+  box-shadow: none;
 }
 
 
