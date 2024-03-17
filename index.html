@@ -208,7 +208,7 @@
                         </div>
                         <div class="w-col w-col-6">
                             <div>
-                                <div class="animation-wrapper"><img class="image-left-full"
+                                <div class="animation-wrapper"><img class="image-left-full left"
                                         src="./Topbox Marketing_files/6061db30604a20b7d114add9_605ded03a37aed8f4bd0337c_pexels-andrea-piacquadio-3960547-cropped-2.jpg"
                                         width="600" height="" alt=""
                                         style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
@@ -234,23 +234,23 @@
                     <div data-w-id="b515d326-55ee-f99d-5b42-334eac5135b0"
                         style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
                         class="logo-wrapper"><a href="index.html#"
-                            class="client-logo w-inline-block"><img
-                                src="./Topbox Marketing_files/6022bd60f90bff1f48c6e1ff_tm-brands-unilever.png"
+                            class="client-logo w-inline-block" id="unilever"><img
+                                src="./Topbox Marketing_files/unilever.png"
                                 width="140" alt=""></a><a href="index.html#"
-                            class="client-logo w-inline-block"><img
-                                src="./Topbox Marketing_files/6022bd38ed0a3c00f2075732_tm-brands-loreal.png" width="140"
+                            class="client-logo w-inline-block" id="loreal"><img
+                                src="./Topbox Marketing_files/loreal.png" width="140"
                                 alt=""></a><a href="index.html#"
-                            class="client-logo w-inline-block"><img
-                                src="./Topbox Marketing_files/6022bd45692b4e4d155c3c2e_tm-brands-lvmh.png" width="140"
+                            class="client-logo w-inline-block" id="lvmh"><img
+                                src="./Topbox Marketing_files/lvmh.png" width="140"
                                 alt=""></a><a href="index.html#"
-                            class="client-logo w-inline-block"><img
-                                src="./Topbox Marketing_files/6022bd5272b3ec5407ae1f68_tm-brands-esteelaudercompanies.png"
+                            class="client-logo w-inline-block" id="esteelauder"><img
+                                src="./Topbox Marketing_files/esteelauder.png"
                                 width="140" alt=""></a><a href="index.html#"
-                            class="client-logo w-inline-block"><img
-                                src="./Topbox Marketing_files/6037c8cbc9bb0df0696c452b_New-Clorox-brand-logo-feature-sized-600x400-c-top.jpg"
+                            class="client-logo w-inline-block" id="clorox"><img
+                                src="./Topbox Marketing_files/clorox.png"
                                 width="123" alt=""></a><a href="index.html#"
-                            class="client-logo w-inline-block"><img
-                                src="./Topbox Marketing_files/6022bd7fc703da099e322e4e_tm-brands-coty.png" width="140"
+                            class="client-logo w-inline-block" id="coty"><img
+                                src="./Topbox Marketing_files/coty.png" width="140"
                                 alt=""></a></div>
                 </div>
                 <div class="margin-page">
@@ -472,19 +472,39 @@
         // });
 
         var link = document.getElementById('dark-mode-toggle');
-var images = document.getElementsByClassName('check-image'); // get all images with the class 'check-image'
+        var checks = document.getElementsByClassName('check-image'); // get all images with the class 'check-image'
+        var loreal = document.getElementById('loreal');
+        var unilever= document.getElementById('unilever');
+        var coty = document.getElementById('coty');
+        var esteelauder = document.getElementById('esteelauder');
+        var lvmh = document.getElementById('lvmh');
+        var clorox = document.getElementById('clorox');
 
 if (localStorage.getItem('darkMode')) {
     document.body.classList.add('dark-mode');
     link.innerText = 'Light';
-    for (var i = 0; i < images.length; i++) {
-        images[i].src = './Topbox Marketing_files/check-white.png'; // replace with your dark mode image path
+    for (var i = 0; i < checks.length; i++) {
+        checks[i].src = './Topbox Marketing_files/check-white.png'; // replace with your dark mode image path
     }
+        if (loreal) loreal.src = './Topbox Marketing_files/loreal.png';
+        if (unilever) unilever.src = './Topbox Marketing_files/unilever.png';
+        if (coty) coty.src = './Topbox Marketing_files/coty.png';
+        if (esteelauder) esteelauder.src = './Topbox Marketing_files/esteelauder.png';
+        if (lvmh) lvmh.src = './Topbox Marketing_files/lvmh.png';
+        if (clorox) clorox.src = './Topbox Marketing_files/clorox.png';
+
 } else {
     link.innerText = 'Dark';
-    for (var i = 0; i < images.length; i++) {
-        images[i].src = './Topbox Marketing_files/check-red.png'; // replace with your light mode image path
+    for (var i = 0; i < checks.length; i++) {
+        checks[i].src = './Topbox Marketing_files/check-red.png'; // replace with your light mode image path
     }
+        if (loreal) loreal.src = './Topbox Marketing_files/loreal_d.png';
+        if (unilever) unilever.src = './Topbox Marketing_files/unilever_d.png';
+        if (coty) coty.src = './Topbox Marketing_files/coty_d.png';
+        if (esteelauder) esteelauder.src = './Topbox Marketing_files/esteelauder_d.png';
+        if (lvmh) lvmh.src = './Topbox Marketing_files/lvmh_d.png';
+        if (clorox) clorox.src = './Topbox Marketing_files/clorox_d.png';
+
 }
 
 link.addEventListener('click', function(event) {
@@ -495,15 +515,28 @@ link.addEventListener('click', function(event) {
     if (document.body.classList.contains('dark-mode')) {
         localStorage.setItem('darkMode', true);
         link.innerText = 'Light';
-        for (var i = 0; i < images.length; i++) {
-            images[i].src = './Topbox Marketing_files/check-white.png'; // replace with your dark mode image path
+        for (var i = 0; i < checks.length; i++) {
+            checks[i].src = './Topbox Marketing_files/check-white.png'; // replace with your dark mode image path
         }
+            if (loreal) loreal.src = './Topbox Marketing_files/loreal.png';
+            if (unilever) unilever.src = './Topbox Marketing_files/unilever.png';
+            if (coty) coty.src = './Topbox Marketing_files/coty.png';
+            if (esteelauder) esteelauder.src = './Topbox Marketing_files/esteelauder.png';
+            if (lvmh) lvmh.src = './Topbox Marketing_files/lvmh.png';
+            if (clorox) clorox.src = './Topbox Marketing_files/clorox.png';
     } else {
         localStorage.removeItem('darkMode');
         link.innerText = 'Dark';
-        for (var i = 0; i < images.length; i++) {
-            images[i].src = './Topbox Marketing_files/check-red.png'; // replace with your light mode image path
+        for (var i = 0; i < checks.length; i++) {
+            checks[i].src = './Topbox Marketing_files/check-red.png'; // replace with your light mode image path
         }
+            if (loreal) loreal.src = './Topbox Marketing_files/loreal_d.png';
+            if (unilever) unilever.src = './Topbox Marketing_files/unilever_d.png';
+            if (coty) coty.src = './Topbox Marketing_files/coty_d.png';
+            if (esteelauder) esteelauder.src = './Topbox Marketing_files/esteelauder_d.png';
+            if (lvmh) lvmh.src = './Topbox Marketing_files/lvmh_d.png';
+            if (clorox) clorox.src = './Topbox Marketing_files/clorox_d.png';
+
     }
 });
 

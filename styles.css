@@ -5991,6 +5991,7 @@ figure {
 }
 body {
   transition: all 2s;
+  
 }
 
 body.dark-mode {
@@ -6025,6 +6026,8 @@ body.dark-mode .footer-style-1{
   color: white;
   opacity: 80%;
 }
+
+
 
 .dark-mode strong {
   color: white;
@@ -6063,4 +6066,11 @@ body.dark-mode .button:hover {
   box-shadow: none;
 }
 
+/* body.dark-mode .team-photo {
+  opacity: 50%;
+} */
+
+body.dark-mode .section.overflow {
+  opacity: 80%;
+}
 
