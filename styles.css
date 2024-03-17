@@ -2743,9 +2743,8 @@ figure {
 .scrollbar {
   z-index: 10;
   width: 100%;
-  height: 5px;
-  background-color: #68f92f;
-  /* background-color: #0854a5; */
+  height: 2px;
+  background-color: #0854a5;
   position: absolute;
   top: 0;
   left: 0;
