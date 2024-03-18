@@ -6033,7 +6033,6 @@ body.dark-mode .footer-style-1{
 }
 
 
-
 .dark-mode strong {
   color: white;
 }
@@ -6078,6 +6077,16 @@ body.dark-mode .navbar.transparent.w-na {
 body.dark-mode .loader-background {
   background-color: #000;
 }
+
+body.dark-mode h4{
+  color: white;
+  opacity: 30%;
+}
+
+.dark-mode .office-name{
+  opacity: 80%;
+}
+
 /* body.dark-mode .team-photo {
   opacity: 50%;
 } */
@@ -6091,3 +6100,7 @@ body.dark-mode .loader-background {
   background-color: #000;
 }
 
+#special-page h2 {
+  color: white;
+  opacity: 80%;
+}
