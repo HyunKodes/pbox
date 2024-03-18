@@ -6087,6 +6087,7 @@ body.dark-mode .loader-background {
 } */
 
 
-.footer-style-1 #special-page{
+#special-page .footer-style-1 {
   background-color: #000;
 }
+
