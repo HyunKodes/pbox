@@ -2355,14 +2355,14 @@ a {
 }
 
 ul {
-  /* color: #0854a5; */
+  color: #0854a5;
   margin-top: 0;
   margin-bottom: 10px;
   padding-left: 40px;
 }
 
 li {
-  /* color: #0854a5; */
+  color: #0854a5;
   padding-top: 0;
   padding-bottom: 5px;
 }
@@ -2746,7 +2746,7 @@ figure {
   height: 2px;
   background-color: #0854a5;
   background-color: #a50808;
-  color: #000;
+  scrollbar-color: green;
   position: absolute;
   top: 0;
   left: 0;
