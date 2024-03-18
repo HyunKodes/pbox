@@ -2049,6 +2049,7 @@ textarea.w-input, textarea.w-select {
 
 .w-nav-link.w--current {
   color: #0082f3;
+  color: #14f300;
 }
 
 .w-nav-menu {
@@ -2355,14 +2356,14 @@ a {
 }
 
 ul {
-  color: #0854a5;
+  color: #010101;
   margin-top: 0;
   margin-bottom: 10px;
   padding-left: 40px;
 }
 
 li {
-  color: #0854a5;
+  color: #010101;
   padding-top: 0;
   padding-bottom: 5px;
 }
@@ -2398,8 +2399,8 @@ figure {
 
 .banner.second {
   height: 100vh;
-  background-color: #0854a5;
-  background-image: linear-gradient(225deg, #0e31e9, #0854a5);
+  background-color: #010101;
+  background-image: linear-gradient(225deg, #0e31e9, #010101);
 }
 
 .banner.third {
@@ -2412,7 +2413,7 @@ figure {
 
 .banner.fourth {
   height: 100vh;
-  background-color: #0854a5;
+  background-color: #010101;
   background-image: none;
   padding-left: 0;
   padding-right: 0;
@@ -2436,8 +2437,8 @@ figure {
 
 .banner.intro {
   height: 600px;
-  background-color: #0854a5;
-  background-image: linear-gradient(#0e31e9, #0854a5);
+  background-color: #010101;
+  background-image: linear-gradient(#0e31e9, #010101);
 }
 
 .section {
@@ -2448,7 +2449,7 @@ figure {
 
 .section.with-color {
   background-color: #f32442;
-  background-image: linear-gradient(225deg, #f32442, #0854a5);
+  background-image: linear-gradient(225deg, #f32442, #010101);
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -2744,7 +2745,7 @@ figure {
   z-index: 10;
   width: 100%;
   height: 2px;
-  background-color: #0854a5;
+  background-color: #010101;
   background-color: #a50808;
   scrollbar-color: green;
   position: absolute;
@@ -3198,7 +3199,7 @@ figure {
   width: 70px;
   height: 70px;
   opacity: 1;
-  background-color: #0854a5;
+  background-color: #010101;
   justify-content: center;
   align-items: center;
   margin: -120px auto 25px;
@@ -3596,7 +3597,7 @@ figure {
   color: #fff;
   letter-spacing: 2px;
   text-transform: uppercase;
-  background-color: #0854a5;
+  background-color: #010101;
   padding: 18px 35px 16px;
   font-size: 11px;
   transition: background-color .3s;
@@ -3744,7 +3745,7 @@ figure {
   width: 100px;
   height: 100px;
   border: 1px solid #ededed;
-  border-top-color: #0854a5;
+  border-top-color: #010101;
   justify-content: center;
   align-items: center;
   margin: -1px auto 25px;
@@ -3776,7 +3777,7 @@ figure {
 
 .tab-testi.w--current {
   opacity: 1;
-  border-top-color: #0854a5;
+  border-top-color: #010101;
 }
 
 .tab-testi.photo-2 {
@@ -3843,7 +3844,7 @@ figure {
 .team-social {
   width: 50px;
   height: 100%;
-  background-image: linear-gradient(45deg, #0e31e9, #0854a5);
+  background-image: linear-gradient(45deg, #0e31e9, #010101);
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -3922,7 +3923,7 @@ figure {
 }
 
 .blog-wrapper:hover {
-  color: #0854a5;
+  color: #010101;
 }
 
 .blog-wrapper.center {
@@ -3978,7 +3979,7 @@ figure {
 .meta-month.auto {
   width: 100%;
   color: #fff;
-  background-color: #0854a5;
+  background-color: #010101;
   padding-left: 15px;
   padding-right: 15px;
   font-size: 10px;
@@ -4015,7 +4016,7 @@ figure {
 .services-icon-second {
   width: 120px;
   height: 120px;
-  border: 1px solid #0854a5;
+  border: 1px solid #010101;
   border-radius: 100%;
   justify-content: center;
   align-items: center;
@@ -4041,7 +4042,7 @@ figure {
 
 .white-square {
   z-index: 3;
-  background-color: #0854a5;
+  background-color: #010101;
   padding: 80px 70px;
   position: relative;
   left: 0;
@@ -4357,7 +4358,7 @@ figure {
 }
 
 .services-content._3 {
-  background-color: #0854a5;
+  background-color: #010101;
 }
 
 .services-content._4 {
@@ -4380,7 +4381,7 @@ figure {
 .line-half {
   width: 30%;
   height: 50px;
-  background-color: #0854a5;
+  background-color: #010101;
   justify-content: flex-end;
   align-items: center;
   padding-left: 20px;
@@ -4639,13 +4640,13 @@ figure {
 }
 
 .price-title {
-  color: #0854a5;
+  color: #010101;
   letter-spacing: 2px;
   font-size: 16px;
 }
 
 .price {
-  color: #0854a5;
+  color: #010101;
   margin-bottom: 0;
   font-size: 40px;
   line-height: 40px;
@@ -4667,7 +4668,7 @@ figure {
 .price-square {
   width: 140px;
   height: 140px;
-  border: 2px solid #0854a5;
+  border: 2px solid #010101;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -4891,7 +4892,7 @@ figure {
 }
 
 .changelog-title {
-  color: #0854a5;
+  color: #010101;
   font-size: 22px;
   font-weight: 500;
 }
@@ -5412,7 +5413,7 @@ figure {
 
   .menu-button {
     color: #fff;
-    background-color: #0854a5;
+    background-color: #010101;
     padding: 12px;
   }
 
