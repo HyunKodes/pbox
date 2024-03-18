@@ -33,7 +33,7 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #000;
+  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6071,6 +6071,9 @@ body.dark-mode .navbar.transparent.w-na {
   background-color: transparent;
 }
 
+body.dark-mode .loader-background {
+  background-color: #000;
+}
 /* body.dark-mode .team-photo {
   opacity: 50%;
 } */
