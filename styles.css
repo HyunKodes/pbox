@@ -18,11 +18,6 @@ body {
   background-color: #000;
 }
 
-.full-page {
-  background-color: #000;
-  color: #000;
-}
-
 /* .loader-background {
   position: fixed;
   top: 0;
@@ -2432,7 +2427,7 @@ figure {
 .banner.five {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0);
-  background-color: rgb(20, 230, 9);
+  /* background-color: rgb(20, 230, 9); */
   background-image: none;
 }
 
