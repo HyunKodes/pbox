@@ -18,6 +18,11 @@ body {
   background-color: #000;
 }
 
+.full-page {
+  background-color: #fff;
+  color: #fff;
+}
+
 /* .loader-background {
   position: fixed;
   top: 0;
