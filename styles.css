@@ -2572,6 +2572,10 @@ figure {
   border-bottom: 1px solid rgba(255, 255, 255, .3);
 }
 
+.navbar.transparent.w-nav{
+  background-color: #0aee0e;
+}
+
 .nav-link {
   color: #616167;
   letter-spacing: 1px;
