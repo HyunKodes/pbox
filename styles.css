@@ -2475,6 +2475,7 @@ figure {
 }
 
 .section.gray {
+  transition: all 2s;
   background-color: #f5f5f7;
 }
 
@@ -3318,6 +3319,7 @@ figure {
 }
 
 .footer-style-1 {
+  transition: all 2s;
   background-color: #fff;
   padding: 80px 40px 20px;
   position: relative;
@@ -3645,7 +3647,7 @@ figure {
 
 .preloader {
   z-index: 9999;
-  background-color: #fff;
+  background-color: #ffffff;
   justify-content: center;
   align-items: center;
   /* display: none; */
@@ -4213,6 +4215,7 @@ figure {
 }
 
 .service-bottom {
+  transition: all 1s;
   padding: 20px 30px;
 }
 
@@ -6003,9 +6006,13 @@ body {
 
 body.dark-mode {
   background-color: #000;
+  transition: all 2s;
+
 }
 
+/* the body for Services page */
 body.dark-mode .section.gray{
+  transition: all 2s;
   background-color: #000;
 }
 
@@ -6032,10 +6039,13 @@ body.dark-mode .w-nav-link.w--current {
 } */
 
 body.dark-mode .service-bottom{
-  background-color: #000;
+  background-color: #000000f4;
+  /* filter: opacity(-50%)  ; */
+  transition: all 2s;
 }
 
 body.dark-mode .footer-style-1{
+  transition: all 2s;
   background-color: #000;
 }
 
