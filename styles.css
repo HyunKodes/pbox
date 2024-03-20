@@ -2750,7 +2750,7 @@ figure {
 .scrollbar {
   z-index: 10;
   width: 100%;
-  height: 2px;
+  height: 1px;
   background-color: #010101;
   background-color: #a50808;
   scrollbar-color: green;
@@ -6093,6 +6093,11 @@ body.dark-mode .loader-background {
 body.dark-mode h4{
   color: white;
   opacity: 30%;
+}
+
+body.dark-mode h6{
+  color: white;
+  opacity: 60%;
 }
 
 .dark-mode .office-name{
