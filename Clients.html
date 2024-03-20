@@ -113,9 +113,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="">
+                <div id="brands" class="">
                     <img
-                        src="./Clients_files/many-clients-cropped.png" width="1200">
+                        src="./Clients_files/clients_d2.png" width="1200">
                     <!-- <img
                         src="./Clients_files/6022bd60f90bff1f48c6e1ff_tm-brands-unilever.png" loading="lazy" width="317"
                         id="w-node-_06b41fd5-5f26-4f96-75ea-a222096e6a3b-5454c2d4" alt=""><img
@@ -242,16 +242,21 @@
     </div>
     <script>    
         var logo = document.querySelector('#logo img');  
+        var brands = document.querySelector('#brands img');  
         var link = document.getElementById('dark-mode-toggle');
 
         if (localStorage.getItem('darkMode')) {
             document.body.classList.add('dark-mode');
             link.innerText = 'Light';
             if (logo) logo.src = './Topbox Marketing_files/pbox_d.png';
+            if (brands) brands.src = './Clients_files/clients_d2.png';
+
 
         } else {
             link.innerText = 'Dark';    
             logo.src = './Topbox Marketing_files/pbox.png';
+            brands.src = './Clients_files/clients2.png';
+
         }
 
         link.addEventListener('click', function(event) {
@@ -263,10 +268,14 @@
                 localStorage.setItem('darkMode', true);
                 link.innerText = 'Light';
                 logo.src = './Topbox Marketing_files/pbox_d.png';
+                brands.src = './Clients_files/clients_d2.png';
+
             } else {
                 localStorage.removeItem('darkMode');
                 link.innerText = 'Dark';
                 logo.src = './Topbox Marketing_files/pbox.png';
+                brands.src = './Clients_files/clients2.png';
+
             }
         });
     </script>
