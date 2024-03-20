@@ -6096,6 +6096,11 @@ body.dark-mode h4{
 }
 
 body.dark-mode h6{
+  color: rgb(137, 137, 137);
+  opacity: 60%;
+}
+
+body.dark-mode .w-form{
   color: white;
   opacity: 60%;
 }
