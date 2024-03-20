@@ -71,7 +71,7 @@
     <div id="Top" class="sub-banner">
       <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease"
         role="banner" class="navbar w-nav" style="will-change: width, height; height: 100px;">
-        <div class="brand-logo-wrapper"><a href="index.html" class="brand w-nav-brand"
+        <div class="brand-logo-wrapper"><a href="index.html" id="logo" class="brand w-nav-brand"
             aria-label="home"><img src="./Leadership_files/6022af1d55216162403fe58a_topbox marketing logo.png"
               width="600"
               srcset="https://uploads-ssl.webflow.com/6022a8be6f14f795d21087c6/6022af1d55216162403fe58a_topbox%20marketing%20logo-p-500.png 500w, https://uploads-ssl.webflow.com/6022a8be6f14f795d21087c6/6022af1d55216162403fe58a_topbox%20marketing%20logo.png 591w"
@@ -325,41 +325,17 @@
     </div>
   </footer>
   <script>    
-    var logo = document.getElementByClassName('');
+    var logo = document.querySelector('#logo img');  
     var link = document.getElementById('dark-mode-toggle');
-    var checks = document.getElementsByClassName('check-image');
-    var loreal = document.querySelector('#loreal img');
-    var clorox = document.querySelector('#clorox img');
-    var coty = document.querySelector('#coty img');
-    var unilever = document.querySelector('#unilever img');
-    var lvmh = document.querySelector('#lvmh img');
-    var esteelauder = document.querySelector('#esteelauder img');
 
-//THIS CODE WORKS
     if (localStorage.getItem('darkMode')) {
         document.body.classList.add('dark-mode');
         link.innerText = 'Light';
-        for (var i = 0; i < checks.length; i++) {
-            checks[i].src = './Topbox Marketing_files/check-white.png';
-        }
-        //the format using the ? and the + new Date().getTime() is used to bypass the cache but I've only included this version for reference
-            if (loreal) loreal.src = './Topbox Marketing_files/loreal_d.png?' + new Date().getTime();
-            if (clorox) clorox.src = './Topbox Marketing_files/clorox_d.png';
-            if (esteelauder) esteelauder.src = './Topbox Marketing_files/esteelauder_d.png';
-            if (coty) coty.src = './Topbox Marketing_files/coty_d.png';
-            if (lvmh) lvmh.src = './Topbox Marketing_files/lvmh_d.png';
-            if (unilever) unilever.src = './Topbox Marketing_files/unilever_d.png';
+        if (logo) logo.src = './Topbox Marketing_files/pbox_d.png';
+
     } else {
         link.innerText = 'Dark';    
-        for (var i = 0; i < checks.length; i++) {
-            checks[i].src = './Topbox Marketing_files/check-red.png'; // 
-        }
-            if (loreal) loreal.src = './Topbox Marketing_files/loreal.png';
-            if (clorox) clorox.src = './Topbox Marketing_files/clorox.png';
-            if (esteelauder) esteelauder.src = './Topbox Marketing_files/esteelauder.png';
-            if (coty) coty.src = './Topbox Marketing_files/coty.png';
-            if (lvmh) lvmh.src = './Topbox Marketing_files/lvmh.png';
-            if (unilever) unilever.src = './Topbox Marketing_files/unilever.png';
+        logo.src = './Topbox Marketing_files/pbox.png';
     }
 
     link.addEventListener('click', function(event) {
@@ -370,27 +346,11 @@
         if (document.body.classList.contains('dark-mode')) {
             localStorage.setItem('darkMode', true);
             link.innerText = 'Light';
-            for (var i = 0; i < checks.length; i++) {
-                checks[i].src = './Topbox Marketing_files/check-white.png'; 
-            }
-                if (loreal) loreal.src = './Topbox Marketing_files/loreal_d.png';
-                if (clorox) clorox.src = './Topbox Marketing_files/clorox_d.png';
-                if (esteelauder) esteelauder.src = './Topbox Marketing_files/esteelauder_d.png';
-                if (coty) coty.src = './Topbox Marketing_files/coty_d.png';
-                if (lvmh) lvmh.src = './Topbox Marketing_files/lvmh_d.png';
-                if (unilever) unilever.src = './Topbox Marketing_files/unilever_d.png';
+            logo.src = './Topbox Marketing_files/pbox_d.png';
         } else {
             localStorage.removeItem('darkMode');
             link.innerText = 'Dark';
-            for (var i = 0; i < checks.length; i++) {
-                checks[i].src = './Topbox Marketing_files/check-red.png'; 
-            }
-                if (loreal) loreal.src = './Topbox Marketing_files/loreal.png';
-                if (clorox) clorox.src = './Topbox Marketing_files/clorox.png';
-                if (esteelauder) esteelauder.src = './Topbox Marketing_files/esteelauder.png';
-                if (coty) coty.src = './Topbox Marketing_files/coty.png';
-                if (lvmh) lvmh.src = './Topbox Marketing_files/lvmh.png';
-                if (unilever) unilever.src = './Topbox Marketing_files/unilever.png';
+            logo.src = './Topbox Marketing_files/pbox.png';
         }
     });
 </script>
