@@ -102,7 +102,7 @@
             <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease"
                 data-easing2="ease" role="banner" class="navbar w-nav"
                 style="will-change: width, height; height: 60px;">
-                <div class="brand-logo-wrapper"><a href="index.html" class="brand w-nav-brand"
+                <div class="brand-logo-wrapper"><a href="index.html" id="logo" class="brand w-nav-brand"
                         aria-label="home"><img src="./Topbox Marketing_files/pbox.png"
                             width="600"
                             sizes="(max-width: 479px) 70vw, 260px" alt="" class="brand-logo-v3"></a></div>
@@ -277,7 +277,7 @@
         </div>
     </footer>
     <script>    
-
+        var logo = document.querySelector('#logo img');        
         var link = document.getElementById('dark-mode-toggle');
         var checks = document.getElementsByClassName('check-image');
         var loreal = document.querySelector('#loreal img');
@@ -291,6 +291,8 @@
         if (localStorage.getItem('darkMode')) {
             document.body.classList.add('dark-mode');
             link.innerText = 'Light';
+            if (logo) logo.src = './Topbox Marketing_files/pbox_d.png';
+
             for (var i = 0; i < checks.length; i++) {
                 checks[i].src = './Topbox Marketing_files/check-white.png';
             }
@@ -303,6 +305,8 @@
                 if (unilever) unilever.src = './Topbox Marketing_files/unilever_d.png';
         } else {
             link.innerText = 'Dark';    
+            logo.src = './Topbox Marketing_files/pbox.png';
+
             for (var i = 0; i < checks.length; i++) {
                 checks[i].src = './Topbox Marketing_files/check-red.png'; // 
             }
@@ -322,6 +326,8 @@
             if (document.body.classList.contains('dark-mode')) {
                 localStorage.setItem('darkMode', true);
                 link.innerText = 'Light';
+                logo.src = './Topbox Marketing_files/pbox_d.png';
+
                 for (var i = 0; i < checks.length; i++) {
                     checks[i].src = './Topbox Marketing_files/check-white.png'; 
                 }
@@ -334,6 +340,8 @@
             } else {
                 localStorage.removeItem('darkMode');
                 link.innerText = 'Dark';
+                logo.src = './Topbox Marketing_files/pbox.png';
+
                 for (var i = 0; i < checks.length; i++) {
                     checks[i].src = './Topbox Marketing_files/check-red.png'; 
                 }
