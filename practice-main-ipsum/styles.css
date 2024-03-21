@@ -12,7 +12,15 @@ body {
   font-weight: 300;
   font-size: 12px;
   background: #2b2b2b;
+  
 }
+
+.loader-background, .preloader {
+  display: none; /* Initially hide both loaders */
+  /* Other styles... */
+}
+
+
 
 /* .loader-background {
   position: fixed;
@@ -28,20 +36,22 @@ body {
 } */
 
 .loader-background {
+
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   background-color: #fff;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
-  z-index: 9999;
+  z-index: 9998;
   transition: background;
   opacity: 1; 
   transition: opacity 2s ease-out; 
   pointer-events: auto; /* Add this line */
+  
 
 }
 
@@ -51,11 +61,24 @@ body {
   --border-width: 1px;
   --cells: 4;
   --total-size: calc(var(--cells) * (var(--cell-size) + 2 * var(--cell-spacing)));
-  
+  /* border-radius: 50%; */
+  /* margin: 50%; */
+  /* border-radius: 50%; */
+  /* width: 130px;
+  height: 130px; */
+  /* margin: 22% auto 0 auto;
+   */
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+
   display: flex;
   flex-wrap: wrap;
   width: var(--total-size);
   height: var(--total-size);
+  
+  
 }
 
 
@@ -87,9 +110,11 @@ body {
   box-sizing: border-box;
   border: var(--border-width) solid var(--cell-color);
   animation: 1.5s ripple ease infinite;
+
 }
 .mosaic-loader > .cell.d-1 {
   animation-delay: 100ms;
+  
 }
 .mosaic-loader > .cell.d-2 {
   animation-delay: 200ms;
@@ -3645,18 +3670,55 @@ figure {
   padding-bottom: 5px;
 }
 
-.preloader {
-  z-index: 9999;
+/* 
+#loaders {
+  z-index: 8000;
   background-color: #ffffff;
   justify-content: center;
   align-items: center;
-  /* display: none; */
   display: flex;
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  opacity: 0.5;
+  transition: background-color 2s;
+}   */
+
+
+
+.preloader {
+  z-index: 8000;
+  background-color: #ffffff;
+  opacity: 50%;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  transition: opacity 2s ease-out; 
+  
+} 
+
+.preloader-icon {
+  z-index: 8000;
+  background-color: #ffffff;
+  opacity: 50%;
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  transition: opacity 2s ease-out; 
 }
 
 .vertical-divider {
@@ -6097,7 +6159,9 @@ body.dark-mode .navbar.transparent.w-na {
 }
 
 body.dark-mode .loader-background {
+  
   background-color: #000;
+
 }
 
 body.dark-mode h4{

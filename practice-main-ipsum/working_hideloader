@@ -5,23 +5,27 @@ function setInitialLoaderVisibility() {
 
     // If dark mode is on, hide the light loader and show the dark loader
     if (darkMode) {
-        for(var i = 0; i < lightLoader.length; i++) {
-            lightLoader[i].style.display = 'none';
-        }
-        for(var i = 0; i < darkLoader.length; i++) {
-            darkLoader[i].style.display = 'block';
-        }
-    } 
-    // If dark mode is off, hide the dark loader and show the light loader
-    else {
         for(var i = 0; i < darkLoader.length; i++) {
             darkLoader[i].style.display = 'none';
         }
         for(var i = 0; i < lightLoader.length; i++) {
             lightLoader[i].style.display = 'block';
         }
+    } 
+    // If dark mode is off, hide the dark loader and show the light loader
+    else {
+
+        for(var i = 0; i < lightLoader.length; i++) {
+            lightLoader[i].style.display = 'none';
+        }
+        for(var i = 0; i < darkLoader.length; i++) {
+            darkLoader[i].style.display = 'block';
+        }
     }
 }
+
+
+
 
 
 // function applyLoaderClass() {
@@ -41,7 +45,7 @@ function hideLoaderClass() {
     var delay = 3000; // 1 second
 
     var darkMode = localStorage.getItem('darkMode') === 'true';
-var className = darkMode ? 'preloader' : 'loader-background';
+var className = darkMode ? 'loader-background' : 'preloader';
 
     setTimeout(function() {
         var elements = document.getElementsByClassName(className);

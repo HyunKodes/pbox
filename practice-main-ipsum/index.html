@@ -52,12 +52,13 @@
         rel="apple-touch-icon">
     <script src="./Topbox Marketing_files/api.js.download" type="text/javascript"></script>
 </head>
-
 <!-- <body onload="hidePreloader()"> -->
-<body onload="setInitialLoaderVisibility(); hideLoaderClass();">
-            <div class="preloader"><img
-        src="./Case Studies_files/6022a8bec5315e8b1354c35a_bars.svg" width="38" alt="" class="preloader-icon"></div>
-        <div id="loader" class="loader-background">
+<body onload="setInitialLoaderVisibility(); hideLoaderClass(); ">
+            
+    <div id="loaders"><div class="preloader"><img
+        src="./Case Studies_files/6022a8bec5315e8b1354c35a_bars.svg" width="38" alt="" opacity="1" class="preloader-icon"></div>
+
+        <div class="loader-background">
             <div class="mosaic-loader">
                 <div class="cell d-0"></div>
                 <div class="cell d-1"></div>
@@ -80,11 +81,13 @@
                 <div class="cell d-6"></div>
             </div>
         </div>
-
+    </div>
 
         <!-- <div class="preloader" style="display: none; opacity: 0;"><img
             src="./Topbox Marketing_files/6022a8bec5315e8b1354c35a_bars.svg" width="38" alt="" class="preloader-icon"
             style="opacity: 0;"></div> -->
+
+
 
 
             
@@ -417,6 +420,7 @@
                 </div>
             </div>
         </div>
+    
         <footer class="footer-style-1">
             <div class="container w-container">
                 <div class="footer-wrapper">
@@ -475,7 +479,6 @@
    <script>    
         // var script = document.createElement('script');
 
-        var loader = document.getElementById('loader');
         var link = document.getElementById('dark-mode-toggle');
         var checks = document.getElementsByClassName('check-image');
         var loreal = document.querySelector('#loreal img');
@@ -489,7 +492,6 @@
         if (localStorage.getItem('darkMode')) {
             document.body.classList.add('dark-mode');
             link.innerText = 'Light';
-            loader.src = "./Case Studies_files/6022a8bec5315e8b1354c35a_bars.svg"
             for (var i = 0; i < checks.length; i++) {
                 checks[i].src = './Topbox Marketing_files/check-white.png';
             }
@@ -502,7 +504,6 @@
                 if (unilever) unilever.src = './Topbox Marketing_files/unilever_d.png';
         } else {
             link.innerText = 'Dark';    
-            loader.src = "./Case Studies_files/6022a8bec5315e8b1354c35a_bars.svg"
 
             for (var i = 0; i < checks.length; i++) {
                 checks[i].src = './Topbox Marketing_files/check-red.png'; // 
@@ -523,7 +524,6 @@
             if (document.body.classList.contains('dark-mode')) {
                 localStorage.setItem('darkMode', true);
                 link.innerText = 'Light';
-                loader.src = "./Case Studies_files/6022a8bec5315e8b1354c35a_bars.svg"
 
                 for (var i = 0; i < checks.length; i++) {
                     checks[i].src = './Topbox Marketing_files/check-white.png'; 
@@ -537,7 +537,6 @@
             } else {
                 localStorage.removeItem('darkMode');
                 link.innerText = 'Dark';
-                loader.src = "./Case Studies_files/6022a8bec5315e8b1354c35a_bars.svg"
 
                 for (var i = 0; i < checks.length; i++) {
                     checks[i].src = './Topbox Marketing_files/check-red.png'; 
