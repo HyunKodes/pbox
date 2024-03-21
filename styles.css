@@ -2,7 +2,6 @@
   display: flex;
 }
 
-
 .loader-background {
 
   position: fixed;
@@ -11,7 +10,7 @@
   width: 100vw;
   height: 100vh;
   background-color: #fff;
-  display: none;
+  /* display: none; */
   justify-content: center;
   align-items: center;
   z-index: 9998;
@@ -3694,7 +3693,7 @@ figure {
   opacity: 50%;
   justify-content: center;
   align-items: center;
-  display: none;
+  /* display: none; */
   position: fixed;
   top: 0;
   bottom: 0;
@@ -3702,9 +3701,9 @@ figure {
   right: 0;
   opacity: 1;
   transition: opacity 2s ease-out; 
-  
-} 
 
+} 
+/* 
 .preloader-icon {
   z-index: 8000;
   background-color: #ffffff;
@@ -3719,7 +3718,7 @@ figure {
   right: 0;
   opacity: 1;
   transition: opacity 2s ease-out; 
-}
+} */
 
 .vertical-divider {
   width: 20px;
