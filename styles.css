@@ -6155,7 +6155,12 @@ body.dark-mode [data-nav-menu-open] a {
 }
 
 body.dark-mode [data-nav-menu-open] .w-nav-link.w--current {
-  color: rgb(171, 171, 171); /* This sets the font color to white */
+  color: rgb(129, 129, 129); /* This sets the font color to white */
+}
+
+body.dark-mode .menu-button.w--open {
+  color: #fff;
+  background-color: rgba(129, 129, 129, 0.678);
 }
 
 body.dark-mode h4{
