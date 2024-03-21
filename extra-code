@@ -1,0 +1,29 @@
+.preloader {
+  z-index: -1;
+  background-color: #ffffff;
+  /* justify-self: center;
+  align-self: center; */
+  justify-content: center;
+  align-items: center;
+  /* display: none; */
+  display: flex;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  transition: opacity 2s ease-out; 
+  left: 0;
+  right: 0; 
+}
+
+function hidePreloader() {
+  var delay = 100; // 3 seconds
+
+  setTimeout(function() {
+      var preloaders = document.getElementsByClassName('loader-background');
+      // var preloaders = document.getElementsByClassName('preloader');
+      for(var i = 0; i < preloaders.length; i++) {
+          preloaders[i].style.opacity = '0';
+          preloaders[i].style.pointerEvents = 'none'; // Add this line
+      }
+  }, delay);
+}
