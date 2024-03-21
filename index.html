@@ -478,7 +478,7 @@
       </script> -->
    <script>    
         // var script = document.createElement('script');
-
+        var preloader = document.querySelector('.preloader');
         var link = document.getElementById('dark-mode-toggle');
         var checks = document.getElementsByClassName('check-image');
         var loreal = document.querySelector('#loreal img');
@@ -492,6 +492,8 @@
         if (localStorage.getItem('darkMode')) {
             document.body.classList.add('dark-mode');
             link.innerText = 'Light';
+            preloader.style.zIndex = '1000';
+            
             for (var i = 0; i < checks.length; i++) {
                 checks[i].src = './Topbox Marketing_files/check-white.png';
             }
@@ -503,7 +505,8 @@
                 if (lvmh) lvmh.src = './Topbox Marketing_files/lvmh_d.png';
                 if (unilever) unilever.src = './Topbox Marketing_files/unilever_d.png';
         } else {
-            link.innerText = 'Dark';    
+            link.innerText = 'Dark';   
+            preloader.style.zIndex = '10000'; 
 
             for (var i = 0; i < checks.length; i++) {
                 checks[i].src = './Topbox Marketing_files/check-red.png'; // 
@@ -524,7 +527,9 @@
             if (document.body.classList.contains('dark-mode')) {
                 localStorage.setItem('darkMode', true);
                 link.innerText = 'Light';
+                preloader.style.zIndex = '1000';
 
+                
                 for (var i = 0; i < checks.length; i++) {
                     checks[i].src = './Topbox Marketing_files/check-white.png'; 
                 }
@@ -537,6 +542,7 @@
             } else {
                 localStorage.removeItem('darkMode');
                 link.innerText = 'Dark';
+                preloader.style.zIndex = '10000';
 
                 for (var i = 0; i < checks.length; i++) {
                     checks[i].src = './Topbox Marketing_files/check-red.png'; 

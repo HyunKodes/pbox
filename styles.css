@@ -3,7 +3,6 @@
 }
 
 .loader-background {
-
   position: fixed;
   top: 0;
   left: 0;
@@ -18,10 +17,23 @@
   opacity: 1; 
   transition: opacity 2s ease-out; 
   pointer-events: auto; /* Add this line */
-  
 }
 
-
+.preloader {
+  /* z-index: flex; */
+  background-color: #ffffff;
+  opacity: 50%;
+  justify-content: center;
+  align-items: center;
+  /* display: none; */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  transition: opacity 2s ease-out; 
+} 
 
 .mosaic-loader {
   --cell-size: 12px;
@@ -3686,39 +3698,6 @@ figure {
 }   */
 
 
-
-.preloader {
-  z-index: 8000;
-  background-color: #ffffff;
-  opacity: 50%;
-  justify-content: center;
-  align-items: center;
-  /* display: none; */
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 1;
-  transition: opacity 2s ease-out; 
-
-} 
-/* 
-.preloader-icon {
-  z-index: 8000;
-  background-color: #ffffff;
-  opacity: 50%;
-  justify-self: center;
-  align-self: center;
-  display: flex;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 1;
-  transition: opacity 2s ease-out; 
-} */
 
 .vertical-divider {
   width: 20px;

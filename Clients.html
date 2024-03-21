@@ -246,20 +246,20 @@
     </div>
     <script>    
         var logo = document.querySelector('#logo img');  
-        var brands = document.querySelector('#brands img');  
         var link = document.getElementById('dark-mode-toggle');
+        var preloader = document.querySelector('.preloader');
 
         if (localStorage.getItem('darkMode')) {
             document.body.classList.add('dark-mode');
             link.innerText = 'Light';
-            if (logo) logo.src = './Topbox Marketing_files/pbox_d.png';
-            if (brands) brands.src = './Clients_files/clients_d.png';
+            preloader.style.zIndex = '1000';
 
+            if (logo) logo.src = './Topbox Marketing_files/pbox_d.png';
 
         } else {
             link.innerText = 'Dark';    
             logo.src = './Topbox Marketing_files/pbox.png';
-            brands.src = './Clients_files/clients.png';
+            preloader.style.zIndex = '10000';
 
         }
 
@@ -272,13 +272,13 @@
                 localStorage.setItem('darkMode', true);
                 link.innerText = 'Light';
                 logo.src = './Topbox Marketing_files/pbox_d.png';
-                brands.src = './Clients_files/clients_d.png';
+                preloader.style.zIndex = '1000';
 
             } else {
                 localStorage.removeItem('darkMode');
                 link.innerText = 'Dark';
                 logo.src = './Topbox Marketing_files/pbox.png';
-                brands.src = './Clients_files/clients.png';
+                preloader.style.zIndex = '10000';
 
             }
         });
