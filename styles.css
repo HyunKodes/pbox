@@ -1,39 +1,7 @@
-
-
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap");
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  margin: 0;
-  font-family: "Lato";
-  font-weight: 300;
-  font-size: 12px;
-  background: #2b2b2b;
-  
-}
-
 .loader-background, .preloader {
-  display: none; /* Initially hide both loaders */
-  /* Other styles... */
+  display: flex;
 }
 
-
-
-/* .loader-background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-} */
 
 .loader-background {
 
@@ -52,8 +20,9 @@ body {
   transition: opacity 2s ease-out; 
   pointer-events: auto; /* Add this line */
   
-
 }
+
+
 
 .mosaic-loader {
   --cell-size: 12px;
@@ -77,9 +46,40 @@ body {
   flex-wrap: wrap;
   width: var(--total-size);
   height: var(--total-size);
-  
+
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap");
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 12px;
+  background: #2b2b2b;
   
 }
+
+
+
+
+/* .loader-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+} */
 
 
 /* .mosaic-loader {
