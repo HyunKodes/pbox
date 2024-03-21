@@ -6160,7 +6160,7 @@ body.dark-mode [data-nav-menu-open] .w-nav-link.w--current {
 
 body.dark-mode .menu-button.w--open {
   color: #fff;
-  background-color: rgba(129, 129, 129, 0.678);
+  background-color: rgba(129, 129, 129, 0.333);
 }
 
 body.dark-mode h4{
