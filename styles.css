@@ -6147,9 +6147,12 @@ body.dark-mode.w-nav-overlay [data-nav-menu-open] {
 } */
 
 body.dark-mode [data-nav-menu-open] {
-  background: rgba(200, 200, 200, 0.5); /* This is almost transparent grey */
+  background: rgba(142, 142, 142, 0.5); /* This is almost transparent grey */
 }
 
+body.dark-mode [data-nav-menu-open] a {
+  color: #FFFFFF; /* This sets the font color to white */
+}
 
 body.dark-mode h4{
   color: white;
