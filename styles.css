@@ -2597,6 +2597,7 @@ figure {
   left: 0;
   right: 0;
   box-shadow: 0 20px 50px -20px rgba(0, 0, 0, .1);
+  transition: all .5s;
 }
 
 .navbar.transparent {
@@ -6062,6 +6063,7 @@ body.dark-mode .team-wrapper{
 
 body.dark-mode .navbar{
   background-color: #000;
+  transition: all .5s;
 }
 
 body.dark-mode .navbar.transparent.w-na {
