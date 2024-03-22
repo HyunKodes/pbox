@@ -2602,13 +2602,15 @@ figure {
 
 .navbar.transparent {
   box-shadow: none;
-  background-color: #d5dbd5;
-  /* background-color: #000000; */
+  /* background-color: #d5dbd5; */
+  background-color: #000000;
+  color: #000000;
   border-bottom: 1px solid rgba(255, 255, 255, .3);
 }
 
 .navbar.transparent.w-nav{
-  /* background-color: #000000; */
+  background-color: #000000;
+  color: #000000;
 }
 
 .nav-link {
