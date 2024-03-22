@@ -561,7 +561,34 @@
             }
         });
     </script>
+    <script>
 
+window.addEventListener('scroll', function() {
+  var navbar = document.querySelector('.navbar');
+  var links = document.querySelectorAll('.navbar a'); // Select all links in the navbar
+  var scrollPosition = window.pageYOffset;
+  var transitionPoint = 100; // Change this to the point where you want the navbar to start changing
+
+  if (scrollPosition <= transitionPoint) {
+    var proportion = scrollPosition / transitionPoint;
+    navbar.style.height = (100 - 30 * proportion) + 'px';
+    navbar.style.backgroundColor = 'rgba(255, 255, 255, ' + proportion + ')'; // Transition to white
+    var colorValue = Math.round(255 - (255 - 128) * proportion); // Calculate the color value based on the scroll position
+    links.forEach(function(link) {
+      link.style.color = 'rgb(' + colorValue + ', ' + colorValue + ', ' + colorValue + ')'; // Transition from white to grey
+    });
+  } else {
+    navbar.style.height = '70px';
+    navbar.style.backgroundColor = 'rgba(255, 255, 255, 1)'; // Fully opaque white
+    links.forEach(function(link) {
+      link.style.color = 'rgb(128, 128, 128)'; // Fully opaque grey
+    });
+  }
+});
+
+
+        
+    </script>
     <script src="hideloader.js"></script>
     <!-- <script src="hideloader_d.js"></script> -->
     <!-- <script src="darkmode.js"></script>
