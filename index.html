@@ -128,7 +128,9 @@
                     aria-label="home"><img src="./Pbox Marketing_files/pbox.png"
                         width="600"
                         sizes="(max-width: 479px) 70vw, 260px" alt="" class="brand-logo-v3"></a></div>
-                <nav role="navigation" class="nav-menu w-nav-menu"><a id="dark-mode-toggle" href="#"  class="nav-link w-nav-link">Anything</a><a href="Clients.html"
+                <nav role="navigation" class="nav-menu w-nav-menu">
+                    <!-- <a id="dark-mode-toggle" href="#" class="nav-link w-nav-link"> Whatever</a> -->
+                <a href="Clients.html"
                     aria-current="page" class="nav-link w-nav-link w--current">Clients</a><a
                     href="Services.html" class="nav-link w-nav-link">Services</a>
                     <!-- <a href="Leadership.html" class="nav-link w-nav-link">Leadership</a> -->
@@ -381,6 +383,8 @@
                 <div class="meet-team-button"><a h class="button w-button">meet our leadership team</a></div>
             </div>
         </div>
+        <div><img src="./Pbox Marketing_files/day-and-night.png" id="dark-mode-toggle" class="dark-icon" alt="dark mode icon"></div>
+
         <div class="section no-top">
             <div>
                 <div class="flex-row center make-normal w-row">
@@ -483,6 +487,7 @@
       </script> -->
     <script>
         // var script = document.createElement('script');
+        var icon_d = document.getElementById('dark-mode-toggle');
         var preloader = document.querySelector('.preloader');
         var link = document.getElementById('dark-mode-toggle');
         var checks = document.getElementsByClassName('check-image');
@@ -509,6 +514,8 @@
             if (coty) coty.src = './Pbox Marketing_files/coty_d.png';
             if (lvmh) lvmh.src = './Pbox Marketing_files/lvmh_d.png';
             if (unilever) unilever.src = './Pbox Marketing_files/unilever_d.png';
+            if (icon_d) icon_d.src = './Pbox Marketing_files/day-and-night_d.png';
+
         } else {
             link.innerText = 'Dark';
             preloader.style.zIndex = '10000';
@@ -522,6 +529,8 @@
             if (coty) coty.src = './Pbox Marketing_files/coty.png';
             if (lvmh) lvmh.src = './Pbox Marketing_files/lvmh.png';
             if (unilever) unilever.src = './Pbox Marketing_files/unilever.png';
+            if (icon_d) icon_d.src = './Pbox Marketing_files/day-and-night.png';
+
         }
 
         link.addEventListener('click', function (event) {
@@ -544,6 +553,8 @@
                 if (coty) coty.src = './Pbox Marketing_files/coty_d.png';
                 if (lvmh) lvmh.src = './Pbox Marketing_files/lvmh_d.png';
                 if (unilever) unilever.src = './Pbox Marketing_files/unilever_d.png';
+                if (icon_d) icon_d.src = './Pbox Marketing_files/day-and-night_d.png';
+
             } else {
                 localStorage.removeItem('darkMode');
                 link.innerText = 'Dark';
@@ -558,6 +569,8 @@
                 if (coty) coty.src = './Pbox Marketing_files/coty.png';
                 if (lvmh) lvmh.src = './Pbox Marketing_files/lvmh.png';
                 if (unilever) unilever.src = './Pbox Marketing_files/unilever.png';
+                if (icon_d) icon_d.src = './Pbox Marketing_files/day-and-night.png';
+
             }
         });
     </script>
