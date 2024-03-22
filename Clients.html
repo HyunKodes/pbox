@@ -85,7 +85,9 @@
                         aria-label="home"><img src="./Pbox Marketing_files/pbox.png"
                             width="600"
                             sizes="(max-width: 479px) 70vw, 260px" alt="" class="brand-logo-v3"></a></div>
-                    <nav role="navigation" class="nav-menu w-nav-menu"><a id="dark-mode-toggle" href="#"  class="nav-link w-nav-link">Anything</a><a href="Clients.html"
+                    <nav role="navigation" class="nav-menu w-nav-menu">
+                        <!-- <a id="dark-mode-toggle" href="#"  class="nav-link w-nav-link">Anything</a> -->
+                        <a href="Clients.html"
                         aria-current="page" class="nav-link w-nav-link w--current">Clients</a><a
                         href="Services.html" class="nav-link w-nav-link">Services</a>
                         <!-- <a href="Leadership.html" class="nav-link w-nav-link">Leadership</a> -->
@@ -124,6 +126,8 @@
                         src="./Clients_files/clients_d2.png" width="1200">
             </div>
         </div>
+        <div><img src="./Pbox Marketing_files/day-and-night.png" id="dark-mode-toggle" class="dark-icon" alt="dark mode icon"></div>
+
         <footer class="footer-style-1">
             <div class="container w-container">
                 <div class="footer-wrapper">
@@ -165,6 +169,7 @@
     </div>
     </div>
     <script>    
+        var icon_d = document.getElementById('dark-mode-toggle');
         var logo = document.querySelector('#logo img');  
         var brands = document.querySelector('#brands img');  
         var link = document.getElementById('dark-mode-toggle');
@@ -175,12 +180,16 @@
             link.innerText = 'Light';
             if (logo) logo.src = './Pbox Marketing_files/pbox_d.png';
             if (brands) brands.src = './Clients_files/clients_d.png';
+            if (icon_d) icon_d.src = './Pbox Marketing_files/day-and-night_d.png';
+
             preloader.style.zIndex = '1000';
 
         } else {
             link.innerText = 'Dark';    
             logo.src = './Pbox Marketing_files/pbox.png';
             brands.src = './Clients_files/clients.png';
+            icon_d.src = './Pbox Marketing_files/day-and-night.png';
+
             preloader.style.zIndex = '10000';
 
         }
@@ -195,6 +204,8 @@
                 link.innerText = 'Light';
                 logo.src = './Pbox Marketing_files/pbox_d.png';
                 brands.src = './Clients_files/clients_d.png';
+                icon_d.src = './Pbox Marketing_files/day-and-night_d.png';
+
                 preloader.style.zIndex = '1000';
 
             } else {
@@ -202,6 +213,8 @@
                 link.innerText = 'Dark';
                 logo.src = './Pbox Marketing_files/pbox.png';
                 brands.src = './Clients_files/clients.png';
+                icon_d.src = './Pbox Marketing_files/day-and-night.png';
+
                 preloader.style.zIndex = '10000';
 
             }
