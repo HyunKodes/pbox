@@ -5188,11 +5188,7 @@ figure {
   .nav-menu {
     background-color: #fff;
   }
-
-  .nav-menu second w-nav-menu{
-    background-color: #000;
-    color: #000;
-  }
+  
 
   .nav-menu.second {
     background-color: #212127;
