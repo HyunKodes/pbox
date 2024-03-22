@@ -6052,7 +6052,7 @@ body {
   z-index: 10000;
   position: fixed;
   top: 96%;
-  left: 98%;
+  left: 97.5%;
   transform: translate(-50%, -50%);
 }
 body.dark-mode {
