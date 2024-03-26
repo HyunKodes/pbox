@@ -432,12 +432,13 @@
 
       if (localStorage.getItem("darkMode")) {
         document.body.classList.add("dark-mode");
-        link.innerText = "Light";
+        // link.innerText = "Light";
+
         preloader.style.zIndex = "1000";
         if (logo) logo.src = "./Pbox Marketing_files/pbox_d.png";
         if (icon_d) icon_d.src = "./Pbox Marketing_files/day-and-night_d.png";
       } else {
-        link.innerText = "Dark";
+        // link.innerText = "Dark";
         logo.src = "./Pbox Marketing_files/pbox.png";
         icon_d.src = "./Pbox Marketing_files/day-and-night_d.png";
         preloader.style.zIndex = "10000";
@@ -450,13 +451,13 @@
 
         if (document.body.classList.contains("dark-mode")) {
           localStorage.setItem("darkMode", true);
-          link.innerText = "Light";
+          // link.innerText = "Light";
           logo.src = "./Pbox Marketing_files/pbox_d.png";
           icon_d.src = "./Pbox Marketing_files/day-and-night_d.png";
           preloader.style.zIndex = "1000";
         } else {
           localStorage.removeItem("darkMode");
-          link.innerText = "Dark";
+          // link.innerText = "Dark";
           logo.src = "./Pbox Marketing_files/pbox.png";
           icon_d.src = "./Pbox Marketing_files/day-and-night.png";
           preloader.style.zIndex = "10000";
