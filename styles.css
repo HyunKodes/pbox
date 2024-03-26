@@ -2108,12 +2108,12 @@ textarea.w-input, textarea.w-select {
 
 .w--nav-link-open {
   display: block;
+  background-color: rgba(170, 170, 170, 0.764);
   position: relative;
 }
 
 .w-nav-overlay {
   width: 100%;
-  background-color: #b4b4b4f4;
   display: none;
   position: absolute;
   top: 100%;
