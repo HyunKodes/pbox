@@ -2113,6 +2113,7 @@ textarea.w-input, textarea.w-select {
 
 .w-nav-overlay {
   width: 100%;
+  background-color: #b4b4b4f4;
   display: none;
   position: absolute;
   top: 100%;
